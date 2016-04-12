@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/row_adstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Ads title:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_AdsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/row_adstitle"
+        android:layout_alignTop="@id/row_adstitle"
+        android:layout_toRightOf="@+id/row_adstitle"
+        android:layout_alignBottom="@+id/row_adstitle"
+        android:text="Ads Title"
+         />
+
+    <TextView
+        android:id="@+id/row_adstime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/row_adstitle"
+        android:layout_alignLeft="@+id/row_adstitle"
+        android:text="Released time:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_AdsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/row_adstime"
+        android:layout_alignBottom="@+id/row_adstime"
+        android:layout_alignTop="@+id/row_adstime"
+        android:layout_toRightOf="@+id/row_adstime"
+        android:text="Release Time"
+         />
+
+</RelativeLayout>
+    

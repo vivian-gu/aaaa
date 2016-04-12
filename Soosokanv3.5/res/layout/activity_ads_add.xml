@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lavender" >
+
+   <ImageView
+            android:id="@+id/AdsPic_add"
+            android:layout_width="95dip"
+            android:layout_height="95dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Add photo"
+            android:onClick="ads_pic_button"
+            android:src="@drawable/photobg1" />
+   
+    
+    <TextView
+        android:id="@+id/ads_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Title:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ads_title"
+        android:layout_below="@+id/ads_title"
+        android:layout_marginTop="15dp"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/ads_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ads_title"
+        android:layout_below="@+id/adstitle"
+        android:layout_marginTop="23dp"
+        android:text="Ads Description:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adsdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ads_description"
+        android:layout_below="@+id/ads_description"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/add_ads_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/SteelBlue"
+        android:onClick="ads_add_btn"
+        android:text="Add!"
+        android:textColor="#FFE4E1" />
+    
+    <LinearLayout
+        android:id ="@+id/ads_typelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adsdes"
+        android:layout_below="@+id/adsdes"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/spinnerText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/ads_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ads_typelayout"
+        android:layout_below="@+id/ads_typelayout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/spinnerText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/ads_range"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4" >
+
+    <Button
+        android:id="@+id/add_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/MediumAquamarine"
+        android:onClick="ItemAdd"
+        android:text="@string/item_add_btn"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+ie/add_item" >
+
+        <ListView
+            android:id="@+id/itemlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

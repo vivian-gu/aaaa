@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#FFFFF0</color>
+    <drawable name="select_on">#FF4400</drawable>  
+    <drawable name="select_nm">#969696</drawable>
+    <drawable name="button_on">#FF6347</drawable>
+    <drawable name="button_nm">#FF4400</drawable>
+    <drawable name="reg_bt_on">#969696</drawable> 
+    <drawable name="reg_bt_nm">#BDBDBD</drawable> 
+    <drawable name="layout_bt_on">#EBEBEB</drawable> 
+    <drawable name="layout_bt_nm">#FFFFFF</drawable>
+    
+    
+    
+    <color name="purple1">#DBAAED</color>
+    <color name="blue1">#AAB6ED</color>
+    <color name="pink1">#F2D7C4</color>
+    <color name="yellow1">#F7F70C</color>
+    <color name="white">#FAFAF7</color>
+    <color name="green1">#BCEDB7</color>
+    <color name="blue2">#848EF5</color>
+    <color name="blue3">#49C8F2</color>
+    <color name="purple2">#CB48F7</color>
+    <color name="pink2">#F26D9E</color> 
+    <color name="yellow2">#F9FC9F</color>
+    
+    <color name="search_back">#DDA0DD</color>
+    
+    <color name="simiple_button_color">#FFF</color>
+    
+    <color name="Thistle">#D8BFD8</color>
+    
+    <color name="MediumAquamarine">#66CDAA</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="SteelBlue">#4682B4</color>
+    
+    
+     
+</resources>

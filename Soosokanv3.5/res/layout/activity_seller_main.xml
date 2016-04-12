@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="7"
+            android:text="@string/soosokan"
+            android:textColor="@drawable/reg_bt_on"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Setting_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mytaobao_button_select"
+            android:src="@drawable/menu4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tb_bk_my_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/touxiang_roundimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/userimage"
+                android:paddingBottom = "15dp" 
+                android:paddingTop="15dp"
+                
+                ></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/seller_accountname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:text="@string/account"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" 
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/seller_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:text="@string/address" 
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+<!--             </ImageView> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E0E0E0"
+            android:orientation="vertical" >
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginBottom="15dp" > -->
+<!--             </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp" >
+
+                <Button
+                    android:id="@+id/Manage_item_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_button_select"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Manage_item_button"
+                    android:textColor="@drawable/reg_bt_on" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/table_arrow"
+                    android:contentDescription="@string/desc"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp" >
+
+                <Button
+                    android:id="@+id/Manage_ads_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_button_select"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Manage_ads_button"
+                    android:textColor="@drawable/reg_bt_on" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/table_arrow" 
+                    android:contentDescription="@string/desc"/>
+            </RelativeLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

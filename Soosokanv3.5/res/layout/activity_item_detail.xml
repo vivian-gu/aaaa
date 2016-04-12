@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink1" >
+
+    <TextView
+        android:id="@+id/item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Item Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_Name"
+        android:layout_below="@+id/item_Name" />
+
+    <TextView
+        android:id="@+id/item_Keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_Name"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="15dp"
+        android:text="Item Keyword:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_Keyword"
+        android:layout_below="@+id/item_Keyword"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/item_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemKeyword"
+        android:layout_below="@+id/itemKeyword"
+        android:layout_marginTop="30dp"
+        android:text="Item Price:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_Price"
+        android:layout_below="@+id/item_Price" />
+
+    <CheckBox
+        android:id="@+id/checkDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemPrice"
+        android:layout_below="@+id/itemPrice"
+        android:layout_marginTop="35dp"
+        android:text="Reduced Product" />
+
+    <TextView
+        android:id="@+id/itemDiscountno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkDiscount"
+        android:layout_alignTop="@+id/checkDiscount"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/Percent"
+        android:layout_toRightOf="@+id/checkDiscount"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Seller_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkDiscount"
+        android:layout_below="@+id/checkDiscount"
+        android:layout_marginTop="45dp"
+        android:text="Seller Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Seller_Name"
+        android:layout_below="@+id/Seller_Name"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/Seller_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SellerName"
+        android:layout_below="@+id/SellerName"
+        android:layout_marginTop="50dp"
+        android:text="Seller Location:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SellerLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Seller_Location"
+        android:layout_below="@+id/Seller_Location" />
+
+    <ImageView
+        android:id="@+id/ItemPic"
+        android:layout_width="950dip"
+        android:layout_height="950dip"/>
+<!--         android:layout_alignBottom="@+id/Seller_Location" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_alignTop="@+id/item_Name" -->
+<!--         android:layout_marginRight="15dp" -->
+<!--         android:src="@drawable/photobg1" /> -->
+
+    <TextView
+        android:id="@+id/Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemDiscountno"
+        android:layout_alignRight="@+id/ItemPic"
+        android:text="@string/percentage"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" >
+
+        <Button
+            android:id="@+id/delete_item_btn"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/SteelBlue"
+            android:onClick="itemdelete"
+            android:text="Delete!"
+            android:textColor="#FFE4E1" />
+
+        <Button
+            android:id="@+id/modify_item_btn"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/SteelBlue"
+            android:onClick="itemmodify"
+            android:text="Modify!"
+            android:textColor="#FFE4E1" />
+    </RelativeLayout>
+
+</RelativeLayout>

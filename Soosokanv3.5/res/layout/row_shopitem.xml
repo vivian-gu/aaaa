@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/shop_logo"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/shop_logo" />
+
+    <TextView
+        android:id="@+id/row_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shop_logo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/shop_logo"
+        android:layout_marginLeft="3dp"
+        android:text="Shop name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_ShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shop_logo"
+        android:layout_alignBottom="@+id/row_shopname"
+        android:layout_toRightOf="@+id/row_shopname"
+        android:text="Shop Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        
+        android:layout_alignBottom="@+id/shop_logo"
+        android:text="Distance: 100 m" />
+
+    <TextView
+        android:id="@+id/row_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_ShopName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/shop_logo"
+        android:text="Item name:"
+         />
+
+    <TextView
+        android:id="@+id/row_ItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_itemName"
+        android:layout_alignBottom="@+id/row_itemName"
+        android:layout_toRightOf="@+id/row_itemName"
+        android:text="Name"
+         />
+    
+    <TextView
+        android:id="@+id/row_itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/row_ItemName"
+
+        android:layout_toRightOf="@+id/row_ItemName"
+        android:layout_marginLeft="5dp"
+        android:text="Price:"
+         />
+    
+     <TextView
+        android:id="@+id/row_ItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_itemPrice"
+        android:layout_alignBottom="@+id/row_itemPrice"
+        android:layout_toRightOf="@+id/row_itemPrice"
+        android:text="price"
+         />
+    
+    
+
+</RelativeLayout>

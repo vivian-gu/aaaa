@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <ImageView
+        android:id="@+id/moditempic"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/itempic" />
+
+    <TextView
+        android:id="@+id/row_moditemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/moditempic"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/moditempic"
+        android:text="Item name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_modItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/moditempic"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/row_moditemname"
+        android:text="Item Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_moditemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/moditempic"
+        android:layout_alignLeft="@+id/row_moditemname"
+        android:text="Item price:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_modItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_moditemprice"
+        android:layout_alignBottom="@+id/row_moditemprice"
+        android:layout_toRightOf="@+id/row_moditemprice"
+        android:text="Item Price"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/modifybtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/moditempic"
+        android:layout_alignParentLeft="true"
+        android:text="@string/modifybtn" 
+        android:textSize="10sp"
+        />
+
+</RelativeLayout>

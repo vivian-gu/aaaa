@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/photoupload_cancel"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="Upload Picture"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/photoupload_sure"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:text="Sure"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/photo_display_single"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+           
+                android:contentDescription="@+id/desc" />
+ 
+    </ScrollView>
+
+</LinearLayout>

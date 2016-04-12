@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink1" >
+
+    <TextView
+        android:id="@+id/upitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Updated Item Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+     <EditText
+        android:id="@+id/upitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitem_name"
+        android:layout_below="@+id/upitem_name"
+        android:layout_marginTop="16dp"
+        android:ems="10" />
+     
+         <TextView
+        android:id="@+id/upitem_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitemkeyword"
+        android:layout_below="@+id/upitemname"
+        android:layout_marginTop="18dp"
+        android:text="Updated Item Keyword:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    
+    <EditText
+        android:id="@+id/upitemkeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitem_price"
+        android:layout_below="@+id/upitem_keyword"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/upitem_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitemname"
+        android:layout_below="@+id/upitemkeyword"
+        android:layout_marginTop="22dp"
+        android:text="Updated Item Price:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/upitemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitem_price"
+        android:layout_below="@+id/upitem_price"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/updiscountno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/upcheckdiscount"
+        android:layout_alignRight="@+id/upitemprice"
+        android:layout_alignTop="@+id/upcheckdiscount"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/upcheckdiscount"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/uppercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/updiscountno"
+        android:layout_alignTop="@+id/updiscountno"
+        android:layout_toRightOf="@+id/updiscountno"
+        android:text="@string/percentage"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+            android:id="@+id/Seller_Name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/upcheckdiscount"
+            android:layout_below="@+id/upcheckdiscount"
+            android:layout_marginTop="15dp"
+            android:text="Seller Name:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SellerName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Seller_Name1"
+            android:layout_below="@+id/Seller_Name1"
+            android:ems="10" />
+        
+        <TextView
+            android:id="@+id/Seller_Location1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SellerName1"
+            android:layout_alignLeft="@+id/SellerName1"
+            android:layout_marginTop="10dp"
+            android:text="Seller Location:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SellerLocation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Seller_Location1"
+            android:layout_below="@+id/Seller_Location1" />
+
+    <Button
+        android:id="@+id/upadd_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@color/SteelBlue"
+        android:onClick="item_modify_btn"
+        android:text="Update!"
+        android:textColor="#FFE4E1" />
+
+    <CheckBox
+        android:id="@+id/upcheckdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upitemprice"
+        android:layout_below="@+id/upitemprice"
+        android:text="Reduced Product" />
+    
+    <ImageButton
+            android:id="@+id/ItemPic1"
+            android:layout_width="95dip"
+            android:layout_height="95dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/photobg1" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink1" >
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Item Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemname"
+        android:layout_below="@+id/itemkeyword"
+        android:layout_marginTop="22dp"
+        android:text="Item Price:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_price"
+        android:layout_below="@+id/item_price"
+        android:singleLine="true"
+		android:numeric="decimal"
+
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/itemkeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_price"
+        android:layout_below="@+id/item_keyword"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="16dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/item_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemkeyword"
+        android:layout_below="@+id/itemname"
+        android:layout_marginTop="18dp"
+        android:text="Item Keyword:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemprice"
+        android:layout_below="@+id/itemprice"
+        android:layout_marginTop="33dp"
+        android:text="Reduced Product" />
+
+    <EditText
+        android:id="@+id/discountno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkdiscount"
+        android:layout_alignRight="@+id/itemprice"
+        android:layout_alignTop="@+id/checkdiscount"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/checkdiscount"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/discountno"
+        android:layout_alignTop="@+id/discountno"
+        android:layout_toRightOf="@+id/discountno"
+        android:text="@string/percentage"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+
+    <ImageView
+        android:id="@+id/item_pic"
+        android:layout_width="95dip"
+        android:layout_height="95dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_name"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/photobg1" 
+        android:text="Add photo"
+        android:onClick="item_pic_button"/>
+
+    <Button
+        android:id="@+id/add_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_toRightOf="@+id/item_price"
+        android:background="@color/SteelBlue"
+        android:onClick="item_add_btn"
+        android:text="@string/addItem"
+        android:textColor="#FFE4E1" />
+
+</RelativeLayout>

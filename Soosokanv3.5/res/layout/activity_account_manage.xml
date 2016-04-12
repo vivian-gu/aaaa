@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lavender"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Seller Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sellername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_name"
+        android:layout_below="@+id/seller_name" />
+
+    <TextView
+        android:id="@+id/seller_phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellername"
+        android:layout_below="@+id/sellername"
+        android:layout_marginTop="25dp"
+        android:text="Phone Number:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sellerphoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_phoneno"
+        android:layout_below="@+id/seller_phoneno"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/seller_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellerphoneno"
+        android:layout_below="@+id/sellerphoneno"
+        android:layout_marginTop="30dp"
+        android:text="Email Address:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selleremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_email"
+        android:layout_below="@+id/seller_email" />
+    
+<!--         <TextView -->
+<!--         android:id="@+id/seller_pwd" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignLeft="@+id/selleremail" -->
+<!--         android:layout_below="@+id/selleremail" -->
+<!--         android:layout_marginTop="50dp" -->
+<!--         android:text="Password" -->
+<!--         android:textSize="20sp" -->
+<!--         android:textStyle="bold" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/sellerpwd" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignLeft="@+id/seller_pwd" -->
+<!--         android:layout_below="@+id/seller_pwd" /> -->
+    
+
+    <TextView
+        android:id="@+id/seller_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/selleremail"
+        android:layout_below="@+id/selleremail"
+        android:layout_marginTop="35dp"
+        android:text="Location:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selleraddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_address"
+        android:layout_below="@+id/seller_address"
+        android:ems="10" />
+
+
+    <ImageButton
+        android:id="@+id/sellerPic"
+        android:layout_width="95dip"
+        android:layout_height="95dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seller_Name"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/photobg1" />
+
+    <Button
+        android:id="@+id/modify_account_btn"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/SteelBlue"
+        android:onClick="accountModify"
+        android:text="Modify!"
+        android:textColor="#FFE4E1" />
+
+</RelativeLayout>

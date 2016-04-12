@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink1" >
+
+    <EditText
+        android:id="@+id/up_ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/up_ad_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/up_ad_title"
+        android:layout_below="@+id/up_ad_title"
+        android:layout_marginTop="16dp"
+        android:ems="10" />
+
+        <EditText
+            android:id="@+id/up_ad_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/up_ad_description"
+            android:layout_below="@+id/up_ad_description"
+            android:layout_marginTop="16dp"
+            android:ems="10" />
+
+      <EditText
+                android:id="@+id/up_ad_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/up_ad_distance"
+                android:layout_below="@+id/up_ad_distance"
+                android:layout_marginTop="16dp"
+                android:ems="10" />
+
+      
+
+      <Button
+                android:id="@+id/upadd_ads_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:background="@color/SteelBlue"
+                android:onClick="ads_modify_btn"
+                android:text="Update!"
+                android:textColor="#FFE4E1" />
+       
+
+</RelativeLayout>

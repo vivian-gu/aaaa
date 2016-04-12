@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lavender"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/seller_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Email Address:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sellerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_Email"
+        android:layout_below="@+id/seller_Email" />
+
+    <TextView
+        android:id="@+id/seller_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/sellerEmail"
+        android:layout_below="@+id/sellerEmail"
+        android:text="Seller Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_Name"
+        android:layout_below="@+id/seller_Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/seller_Phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/sellerName"
+        android:layout_below="@+id/sellerName"
+        android:text="Phone Number:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sellerPhoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_Phoneno"
+        android:layout_below="@+id/seller_Phoneno"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/seller_Pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellerPhoneno"
+        android:layout_below="@+id/sellerPhoneno"
+        
+        android:text="Password"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sellerPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_Pwd"
+        android:layout_below="@+id/seller_Pwd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/REseller_Pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sellerPwd"
+        android:layout_below="@+id/sellerPwd"
+        android:layout_marginTop="5dp"
+        android:text="Ensure Password:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/REsellerPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/REseller_Pwd"
+        android:layout_below="@+id/REseller_Pwd"
+        android:hint="Please Re-Enter Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/seller_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/REsellerPwd"
+        android:layout_below="@+id/REsellerPwd"
+        android:layout_marginTop="10dp"
+        android:text="Location:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/selleraddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seller_address"
+        android:layout_below="@+id/seller_address"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/sellerPic"
+        android:layout_width="95dip"
+        android:layout_height="95dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seller_Email"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/photobg1" />
+
+    <Button
+        android:id="@+id/modify_account_btn"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/SteelBlue"
+        android:onClick="AccountModsubmit"
+        android:text="Submit!"
+        android:textColor="#FFE4E1" />
+
+</RelativeLayout>
